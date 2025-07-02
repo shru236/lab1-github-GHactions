@@ -12,14 +12,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
-    - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-    - name: setup python 3.9
-      uses: actions/setup-python@v5
+      - name: setup python 3.9
+        uses: actions/setup-python@v5
 
-    - name: Installing requirements
-      run: pip install -r requirements.txt
+      - name: Installing requirements
+        run: pip install -r requirements.txt
 
-    - name: Running code
-      run: python main.py
+      - name: Running code
+        run: python main.py
